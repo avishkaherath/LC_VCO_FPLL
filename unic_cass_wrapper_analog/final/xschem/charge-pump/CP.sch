@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -17,9 +17,13 @@ L 4 1470 -960 1470 -230 {}
 L 4 1470 -230 2130 -230 {}
 L 4 2130 -960 2130 -230 {}
 L 4 1470 -960 2130 -960 {}
+L 4 40 -960 260 -960 {}
+L 4 40 -1020 40 -960 {}
+P 4 5 -160 -1020 260 -1020 260 -600 -160 -600 -160 -1020 {}
 T {Bias Generator} 340 -950 0 0 0.4 0.4 {}
 T {Charge Pump} 1150 -950 0 0 0.4 0.4 {}
 T {Loop Filter} 1490 -950 0 0 0.4 0.4 {}
+T {Bias Current Gen} 60 -1000 0 0 0.4 0.4 {}
 N 740 -330 740 -290 {lab=GND}
 N 740 -470 740 -390 {lab=net2}
 N 710 -360 740 -360 {lab=GND}
@@ -67,13 +71,34 @@ N 740 -640 740 -560 {lab=Vbn}
 N 1880 -590 1990 -590 {lab=CTRL}
 N 1760 -590 1820 -590 {lab=CTRL1}
 N 1280 -640 1280 -590 {lab=CTRL1}
-N 1550 -390 1550 -290 {lab=GND}
-N 1550 -590 1550 -450 {lab=CTRL1}
 N 1280 -590 1550 -590 {lab=CTRL1}
 N 1760 -590 1760 -560 {lab=CTRL1}
 N 1550 -590 1760 -590 {lab=CTRL1}
 N 1760 -500 1760 -450 {lab=CTRL2}
 N 1760 -390 1760 -290 {lab=GND}
+N 140 -670 200 -670 {lab=GND}
+N 200 -720 200 -670 {lab=GND}
+N 140 -720 200 -720 {lab=GND}
+N 140 -690 140 -670 {lab=GND}
+N -100 -670 -40 -670 {lab=GND}
+N -100 -720 -100 -670 {lab=GND}
+N -100 -720 -40 -720 {lab=GND}
+N -40 -690 -40 -670 {lab=GND}
+N 50 -720 100 -720 {lab=Vgs}
+N 140 -670 140 -650 {lab=GND}
+N -40 -670 -40 -650 {lab=GND}
+N 50 -790 50 -720 {lab=Vgs}
+N -40 -790 -40 -750 {lab=Vgs}
+N -40 -910 20 -910 {lab=VDD}
+N 20 -910 20 -860 {lab=VDD}
+N -40 -860 20 -860 {lab=VDD}
+N -40 -910 -40 -890 {lab=VDD}
+N -40 -930 -40 -910 {lab=VDD}
+N 0 -720 50 -720 {lab=Vgs}
+N -40 -790 50 -790 {lab=Vgs}
+N -40 -830 -40 -790 {lab=Vgs}
+N 140 -880 140 -750 {lab=Vx}
+N -200 -860 -80 -860 {lab=VBGR}
 C {opin.sym} 180 -210 0 0 {name=p4 lab=CTRL}
 C {ipin.sym} 110 -220 0 0 {name=p12 lab=UP}
 C {ipin.sym} 110 -270 0 0 {name=p1 lab=VDD}
@@ -122,9 +147,9 @@ C {sg13g2_pr/annotate_fet_params.sym} 890 -940 0 0 {name=annot1 ref=M3}
 C {sg13g2_pr/annotate_fet_params.sym} 900 -380 0 0 {name=annot2 ref=M2}
 C {sg13g2_pr/annotate_fet_params.sym} 1360 -942.105189945283 0 0 {name=annot3 ref=M9}
 C {sg13g2_pr/annotate_fet_params.sym} 1372.208120310291 -302.105189945283 0 0 {name=annot4 ref=M6}
-C {sg13g2_pr/rsil.sym} 1850 -590 1 0 {name=R3
+C {sg13g2_pr/rsil.sym} 1850 -590 1 0 {name=R2
 w=0.5e-6
-l=1000e-6
+l=3848e-6
 model=rsil
 body=sub!
 spiceprefix=X
@@ -134,12 +159,12 @@ m=1
 C {gnd.sym} 1990 -290 0 0 {name=l2 lab=GND}
 C {gnd.sym} 1280 -290 0 0 {name=l3 lab=GND}
 C {gnd.sym} 740 -290 0 0 {name=l5 lab=GND}
-C {devices/vdd.sym} 430 -860 0 0 {name=l12 lab=VDD}
-C {devices/vdd.sym} 740 -860 0 0 {name=l6 lab=VDD}
-C {devices/vdd.sym} 1280 -860 0 0 {name=l7 lab=VDD}
-C {sg13g2_pr/rsil.sym} 1760 -530 2 0 {name=R2
+C {vdd.sym} 430 -860 0 0 {name=l12 lab=VDD}
+C {vdd.sym} 740 -860 0 0 {name=l6 lab=VDD}
+C {vdd.sym} 1280 -860 0 0 {name=l7 lab=VDD}
+C {sg13g2_pr/rsil.sym} 1760 -530 2 0 {name=R1
 w=0.5e-6
-l=2500e-6
+l=3848e-6
 model=rsil
 body=sub!
 spiceprefix=X
@@ -147,28 +172,20 @@ b=0
 m=1
 }
 C {gnd.sym} 1760 -290 0 0 {name=l4 lab=GND}
-C {gnd.sym} 1550 -290 0 0 {name=l8 lab=GND}
 C {lab_pin.sym} 1550 -590 3 1 {name=p6 sig_type=std_logic lab=CTRL1}
 C {lab_pin.sym} 1760 -480 0 1 {name=p9 sig_type=std_logic lab=CTRL2}
-C {sg13g2_pr/cap_cmim.sym} 1990 -420 0 0 {name=C4
+C {sg13g2_pr/cap_cmim.sym} 1990 -420 0 0 {name=C3
 model=cap_cmim
-w=60.0e-6
-l=60.0e-6
-m=1
+w=41.7e-6
+l=41.7e-6
+m=8
 spiceprefix=X
 ic=20}
-C {sg13g2_pr/cap_cmim.sym} 1760 -420 0 0 {name=C1
+C {sg13g2_pr/cap_cmim.sym} 1760 -420 0 0 {name=C2
 model=cap_cmim
-w=40.0e-6
-l=40.0e-6
-m=4
-spiceprefix=X
-ic=2}
-C {sg13g2_pr/cap_cmim.sym} 1550 -420 0 0 {name=C2
-model=cap_cmim
-w=15.0e-6
-l=20.0e-6
-m=4
+w=55.85e-6
+l=55.85e-6
+m=12
 spiceprefix=X
 ic=2}
 C {lab_pin.sym} 510 -670 0 1 {name=p10 sig_type=std_logic lab=Ibias}
@@ -241,3 +258,33 @@ nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 model=sg13_lv_nmos
 spiceprefix=X
 }
+C {sg13g2_pr/sg13_lv_nmos.sym} 120 -720 0 0 {name=M6
+l=0.5u
+w=70.29u
+ng=20
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {gnd.sym} 140 -650 0 0 {name=l1 lab=GND}
+C {sg13g2_pr/sg13_lv_nmos.sym} -20 -720 0 1 {name=M12
+l=0.5u
+w=17.95u
+ng=6
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {gnd.sym} -40 -650 0 1 {name=l8 lab=GND}
+C {lab_pin.sym} 50 -790 2 0 {name=p22 sig_type=std_logic lab=Vgs
+}
+C {sg13g2_pr/sg13_lv_pmos.sym} -60 -860 0 0 {name=M13
+l=0.5u
+w=16.72u
+ng=6
+m=1
+model=sg13_lv_pmos
+spiceprefix=X}
+C {ipin.sym} -200 -860 0 0 {name=p23 lab=VBGR}
+C {vdd.sym} -40 -920 0 0 {name=l9 lab=VDD}
+C {lab_pin.sym} 140 -880 0 1 {name=p34 sig_type=std_logic lab=Ibias}

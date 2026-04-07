@@ -1,3 +1,11 @@
-set symbol_path .
-set schematic_path .
-set xschem_sim_path ./simulations
+append XSCHEM_LIBRARY_PATH :[pwd]
+append XSCHEM_LIBRARY_PATH :[pwd]/lc-vco
+append XSCHEM_LIBRARY_PATH :[pwd]/phase-freq-detector
+append XSCHEM_LIBRARY_PATH :[pwd]/top-pll
+append XSCHEM_LIBRARY_PATH :[pwd]/charge-pump
+append XSCHEM_LIBRARY_PATH :[pwd]/bgr
+append XSCHEM_LIBRARY_PATH :[pwd]/dsm/xschem
+append XSCHEM_LIBRARY_PATH :[pwd]/freq_divider/xschem
+append XSCHEM_LIBRARY_PATH :/foss/pdks/ihp-sg13g2/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :/foss/pdks/ihp-sg13g2/libs.tech/xschem/sg13g2_stdcells
+set netlist_dir [pwd]/top-pll/simulations
