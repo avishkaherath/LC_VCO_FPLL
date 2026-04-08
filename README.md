@@ -17,7 +17,7 @@
 ## Block Diagram of the Project:
 
 <p align="center">
-    <img src=".docs/img/block.png" width = "800" height = "280"><br>
+    <img src="./docs/img/block.png" width = "800" height = "280"><br>
     <em>Figure 1: Block Diagram of the PLL Design</em>
 </p>
 
