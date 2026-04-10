@@ -5,78 +5,70 @@ V {}
 S {}
 F {}
 E {}
-L 4 490 -470 490 -310 {}
-L 4 470 -450 490 -470 {}
-L 4 490 -470 510 -450 {}
-P 4 1 1190 -550 {}
-N 1380 -320 1730 -320 {lab=CLK_OUT}
-N 1380 -300 1550 -300 {lab=rst}
-N 1380 -280 1550 -280 {lab=sclk}
-N 1380 -260 1550 -260 {lab=sdata}
-N 1380 -240 1550 -240 {lab=en}
-N 460 -280 1220 -280 {lab=DSM_OUT}
-N 1730 -540 1800 -540 {lab=CLK_OUT}
-N 1730 -540 1730 -320 {lab=CLK_OUT}
-N 1660 -540 1730 -540 {lab=CLK_OUT}
-N 1560 -640 1560 -630 {lab=VDD}
-N 1440 -550 1460 -550 {lab=VCTRL}
-N 820 -510 840 -510 {lab=DN}
-N 670 -600 670 -590 {lab=VDD}
-N 1070 -610 1070 -600 {lab=VDD}
-N 980 -510 1000 -510 {lab=Ibias}
-N 670 -470 670 -460 {lab=GND}
-N 1070 -480 1070 -470 {lab=GND}
-N 1560 -450 1560 -440 {lab=GND}
-N 1440 -530 1460 -530 {lab=VBGR}
-N 580 -540 640 -540 {lab=CLK_IN}
-N 820 -550 840 -550 {lab=UP}
-N 1170 -540 1190 -540 {lab=VCTRL}
-N 980 -550 1000 -550 {lab=UP}
-N 980 -530 1000 -530 {lab=DN}
-N 580 -520 640 -520 {lab=DSM_OUT}
-N 290 -620 290 -610 {lab=VDD}
-N 290 -470 290 -460 {lab=GND}
-N 400 -540 420 -540 {lab=VBGR}
-C {lab_pin.sym} 1550 -240 0 1 {name=p2 sig_type=std_logic lab=en}
-C {lab_pin.sym} 1550 -260 0 1 {name=p3 sig_type=std_logic lab=sdata}
-C {lab_pin.sym} 1550 -280 0 1 {name=p4 sig_type=std_logic lab=sclk}
-C {lab_pin.sym} 1550 -300 0 1 {name=p5 sig_type=std_logic lab=rst}
-C {lab_pin.sym} 460 -280 0 0 {name=p11 sig_type=std_logic lab=DSM_OUT}
-C {ipin.sym} 90 -420 0 0 {name=p8 lab=sdata}
-C {ipin.sym} 90 -390 0 0 {name=p9 lab=en}
-C {ipin.sym} 90 -360 0 0 {name=p14 lab=sclk}
-C {ipin.sym} 90 -330 0 0 {name=p15 lab=rst}
-C {lab_pin.sym} 1800 -540 0 1 {name=p13 sig_type=std_logic lab=CLK_OUT}
-C {/foss/designs/frac-n-pll-vco-unic_cass/schematic/dsm/xschem/dsm_and_freq_divider.sym} 1300 -280 0 1 {name=adut
-dut=dut
-d_cosim_model= d_cosim
-model=./../dsm_and_freq_divider.so}
-C {lab_pin.sym} 840 -550 0 1 {name=p16 lab=UP}
-C {lab_pin.sym} 580 -520 0 0 {name=p18 sig_type=std_logic lab=DSM_OUT}
-C {lab_pin.sym} 840 -510 0 1 {name=p19 lab=DN}
-C {lab_pin.sym} 1190 -540 0 1 {name=p10 lab=VCTRL}
-C {vdd.sym} 670 -600 0 0 {name=l6 lab=VDD}
-C {vdd.sym} 1070 -610 0 0 {name=l2 lab=VDD}
-C {vdd.sym} 1560 -640 0 0 {name=l4 lab=VDD}
-C {lab_pin.sym} 580 -540 0 0 {name=p17 lab=CLK_IN}
-C {gnd.sym} 670 -460 0 0 {name=l3 lab=GND}
-C {gnd.sym} 1070 -470 0 0 {name=l5 lab=GND}
-C {lab_pin.sym} 1440 -530 0 0 {name=p12 lab=VBGR}
-C {lab_pin.sym} 980 -510 0 0 {name=p20 lab=Ibias}
-C {lab_pin.sym} 980 -550 0 0 {name=p21 lab=UP}
-C {lab_pin.sym} 980 -530 0 0 {name=p22 lab=DN}
-C {lab_pin.sym} 1440 -550 0 0 {name=p23 lab=VCTRL}
-C {gnd.sym} 1560 -440 0 0 {name=l7 lab=GND}
-C {/foss/designs/frac-n-pll-vco-unic_cass/schematic/charge-pump/CP.sym} 1070 -540 0 0 {name=x4}
-C {/foss/designs/frac-n-pll-vco-unic_cass/schematic/phase-freq-detector/PFD.sym} 670 -530 0 0 {name=x6}
-C {/foss/designs/frac-n-pll-vco-unic_cass/schematic/lc-vco/LC_VCO.sym} 1560 -470 0 0 {name=x1}
-C {bgr.sym} 290 -540 0 0 {name=x2}
-C {vdd.sym} 290 -620 0 0 {name=l1 lab=VDD}
-C {gnd.sym} 290 -460 0 0 {name=l8 lab=GND}
-C {lab_pin.sym} 420 -540 0 1 {name=p25 lab=VBGR}
-C {iopin.sym} 190 -140 1 0 {name=p62 lab=GND}
-C {iopin.sym} 190 -250 3 0 {name=p66 lab=VDD
-}
-C {ipin.sym} 170 -200 0 0 {name=p29 lab=CLK_IN}
-C {ipin.sym} 160 -170 0 0 {name=p1 lab=Ibias}
-C {opin.sym} 220 -190 0 0 {name=p6 lab=CLK_OUT}
+N -160 -80 -80 -80 {lab=UP}
+N -160 80 -80 80 {lab=DN}
+N 80 0 200 0 {lab=VCP}
+N 160 100 160 130 {lab=VSS}
+N 160 20 200 20 {lab=VSS}
+N 360 10 480 10 {lab=VCTRL}
+N 440 40 440 80 {lab=VSS}
+N 440 40 480 40 {lab=VSS}
+N 440 -20 480 -20 {lab=VBGR}
+N -0 150 -0 170 {lab=VSS}
+N -220 140 -220 170 {lab=VSS}
+N -0 -170 0 -150 {lab=VDD}
+N -220 -170 -220 -140 {lab=VDD}
+N 40 -170 40 -150 {lab=VBGR}
+N 40 -170 440 -170 {lab=VBGR}
+N 440 -170 440 -20 {lab=VBGR}
+N 630 160 630 180 {lab=VDD}
+N 690 240 730 240 {lab=CLK_OUT}
+N 730 40 730 240 {lab=CLK_OUT}
+N 690 40 730 40 {lab=CLK_OUT}
+N 630 390 630 410 {lab=VSS}
+N 730 -60 730 -20 {lab=VDD}
+N 690 -20 730 -20 {lab=VDD}
+N -450 240 290 240 {lab=FDIV}
+N -450 70 -450 240 {lab=FDIV}
+N -450 70 -410 70 {lab=FDIV}
+N -450 -70 -410 -70 {lab=CLK_IN}
+N 730 40 770 40 {lab=CLK_OUT}
+N 250 300 290 300 {lab=EN}
+N 250 320 290 320 {lab=SDATA}
+N 250 340 290 340 {lab=SCLK}
+N 690 320 730 320 {lab=RST}
+N 730 -20 770 -20 {lab=VDD}
+N 160 100 200 100 {lab=VSS}
+N 160 20 160 100 {lab=VSS}
+C {xschem/PHASE_FREQ_DET.sym} -290 0 0 0 {name=x1}
+C {xschem/CHARGE_PUMP.sym} 0 0 0 0 {name=x2}
+C {xschem/LOOP_FILTER.sym} 280 10 0 0 {name=x3}
+C {lab_pin.sym} -120 -80 3 1 {name=p8 sig_type=std_logic lab=UP}
+C {lab_pin.sym} -120 80 3 0 {name=p7 sig_type=std_logic lab=DN}
+C {lab_pin.sym} 120 0 1 1 {name=p6 sig_type=std_logic lab=VCP}
+C {gnd.sym} 160 130 0 0 {name=l4 lab=VSS}
+C {lab_pin.sym} 400 10 3 1 {name=p4 lab=VCTRL}
+C {xschem/LC_VCO.sym} 590 10 0 0 {name=x4}
+C {gnd.sym} 440 80 0 0 {name=l1 lab=VSS}
+C {gnd.sym} 0 170 0 0 {name=l2 lab=VSS}
+C {gnd.sym} -220 170 0 0 {name=l3 lab=VSS}
+C {xschem/DSM_N_FREQ_DIV.sym} 490 280 0 0 {name=x5}
+C {vdd.sym} 0 -170 0 0 {name=l5 lab=VDD}
+C {vdd.sym} -220 -170 0 0 {name=l6 lab=VDD}
+C {vdd.sym} 630 160 0 0 {name=l7 lab=VDD}
+C {gnd.sym} 630 410 0 0 {name=l8 lab=VSS}
+C {vdd.sym} 730 -60 0 0 {name=l9 lab=VDD}
+C {ipin.sym} -450 -70 2 1 {name=p1 lab=CLK_IN}
+C {opin.sym} 770 40 2 1 {name=p2 lab=CLK_OUT}
+C {ipin.sym} 250 300 2 1 {name=p3 lab=EN}
+C {ipin.sym} 250 320 2 1 {name=p5 lab=SDATA}
+C {ipin.sym} 250 340 2 1 {name=p9 lab=SCLK}
+C {ipin.sym} 730 320 2 0 {name=p10 lab=RST}
+C {lab_pin.sym} 160 -170 3 0 {name=p11 lab=VBGR}
+C {iopin.sym} 770 -20 2 1 {name=p12 lab=VDD}
+C {iopin.sym} 200 100 2 1 {name=p13 lab=VSS}
+C {code_shown.sym} -450 320 0 0 {name=INCLUDE only_toplevel=false 
+value="
+.include DSM_N_FREQ_DIV.spice
+"}
+C {lab_pin.sym} -450 70 0 0 {name=p14 lab=CLK_FB}

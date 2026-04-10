@@ -1,4 +1,0 @@
-append XSCHEM_LIBRARY_PATH :[pwd]
-append XSCHEM_LIBRARY_PATH :/foss/pdks/ihp-sg13g2/libs.tech/xschem
-append XSCHEM_LIBRARY_PATH :/foss/pdks/ihp-sg13g2/libs.tech/xschem/sg13g2_stdcells
-set netlist_dir [pwd]/simulations

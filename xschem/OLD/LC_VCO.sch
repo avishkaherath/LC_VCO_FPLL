@@ -134,8 +134,8 @@ N -560 230 -470 230 {lab=Vgs}
 N -560 190 -560 230 {lab=Vgs}
 N -380 140 -380 270 {lab=Vx}
 N -720 160 -600 160 {lab=VBGR}
-N 570 -30 570 0 {lab=FOUT}
-N 570 -60 570 -30 {lab=FOUT}
+N 570 -30 570 0 {lab=OUT}
+N 570 -60 570 -30 {lab=OUT}
 N 500 30 530 30 {lab=OUTp}
 N 500 -90 530 -90 {lab=OUTp}
 N 570 80 570 100 {lab=GND}
@@ -173,7 +173,7 @@ N 520 -320 580 -320 {lab=VDD}
 N 520 -340 520 -320 {lab=VDD}
 N 520 -280 580 -280 {lab=GND}
 N 520 -280 520 -260 {lab=GND}
-N 570 -30 720 -30 {lab=FOUT}
+N 570 -30 720 -30 {lab=OUT}
 C {sg13g2_pr/sg13_lv_nmos.sym} -400 300 0 0 {name=M5
 l=1u
 w=384u
@@ -228,6 +228,8 @@ spiceprefix=X
 }
 C {gnd.sym} -560 370 0 1 {name=l8 lab=GND}
 C {lab_pin.sym} -470 230 2 0 {name=p1 sig_type=std_logic lab=Vgs
+}
+C {ihp_4nh_inductor.sym} 200 60 2 1 {name=x1
 }
 C {sg13g2_pr/cap_rfcmim.sym} 210 -80 3 0 {name=C1 
 model=cap_rfcmim
@@ -302,7 +304,7 @@ model=sg13_lv_nmos
 spiceprefix=X
 }
 C {gnd.sym} -150 100 0 1 {name=l16 lab=GND}
-C {opin.sym} 720 -30 0 0 {name=p5 lab=FOUT
+C {opin.sym} 720 -30 0 0 {name=p5 lab=OUT
 }
 C {lab_pin.sym} 60 100 2 1 {name=p8 sig_type=std_logic lab=OUTn
 }
@@ -318,8 +320,3 @@ C {vdd.sym} -150 -160 0 0 {name=l9 lab=VDD}
 C {vdd.sym} 220 -350 0 0 {name=l7 lab=VDD}
 C {vdd.sym} 520 -340 0 0 {name=l4 lab=VDD}
 C {vdd.sym} 570 -160 0 0 {name=l12 lab=VDD}
-C {/foss/designs/uniccass-icdesign-tools/shared_xserver/frac-n-pll-vco-smacd_2026/schematic/lc-vco/4nH_INDUCTOR.sym} 200 60 2 1 {name=x1}
-C {code_shown.sym} -220 310 0 0 {name=INCLUDE only_toplevel=false 
-value="
-.include 4nH_INDUCTOR.spice
-"}
