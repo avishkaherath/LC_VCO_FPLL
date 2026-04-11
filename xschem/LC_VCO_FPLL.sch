@@ -28,9 +28,9 @@ N 690 40 730 40 {lab=CLK_OUT}
 N 630 390 630 410 {lab=VSS}
 N 730 -60 730 -20 {lab=VDD}
 N 690 -20 730 -20 {lab=VDD}
-N -450 240 290 240 {lab=FDIV}
-N -450 70 -450 240 {lab=FDIV}
-N -450 70 -410 70 {lab=FDIV}
+N -450 240 290 240 {lab=CLK_FB}
+N -450 70 -450 240 {lab=CLK_FB}
+N -450 70 -410 70 {lab=CLK_FB}
 N -450 -70 -410 -70 {lab=CLK_IN}
 N 730 40 770 40 {lab=CLK_OUT}
 N 250 300 290 300 {lab=EN}
@@ -40,6 +40,10 @@ N 690 320 730 320 {lab=RST}
 N 730 -20 770 -20 {lab=VDD}
 N 160 100 200 100 {lab=VSS}
 N 160 20 160 100 {lab=VSS}
+N 520 -310 520 -290 {lab=VDD}
+N 520 -150 520 -130 {lab=VSS}
+N 440 -220 480 -220 {lab=VBGR}
+N 440 -220 440 -170 {lab=VBGR}
 C {xschem/PHASE_FREQ_DET.sym} -290 0 0 0 {name=x1}
 C {xschem/CHARGE_PUMP.sym} 0 0 0 0 {name=x2}
 C {xschem/LOOP_FILTER.sym} 280 10 0 0 {name=x3}
@@ -72,3 +76,6 @@ value="
 .include DSM_N_FREQ_DIV.spice
 "}
 C {lab_pin.sym} -450 70 0 0 {name=p14 lab=CLK_FB}
+C {xschem/BANDGAP_REF.sym} 520 -220 0 0 {name=x6}
+C {vdd.sym} 520 -310 0 0 {name=l10 lab=VDD}
+C {gnd.sym} 520 -130 0 1 {name=l11 lab=VSS}

@@ -1,0 +1,7 @@
+set PDK_ROOT $env(PDK_ROOT)
+set PDK $env(PDK)
+
+append XSCHEM_LIBRARY_PATH :$env(PWD)
+append XSCHEM_LIBRARY_PATH :$PDK_ROOT/$PDK/libs.tech/xschem
+
+set netlist_dir $env(PWD)/spice

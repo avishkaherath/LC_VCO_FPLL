@@ -1,6 +1,6 @@
-* NGSPICE file created from dsm_and_freq_divider.ext - technology: ihp-sg13g2
+* NGSPICE file created from DSM_N_FREQ_DIV.ext - technology: ihp-sg13g2
 
-.include /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+.include $env(PDK_ROOT)/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
 
 .subckt DSM_N_FREQ_DIV freq_in rst sclk sdata en freq_out VDD GND
 XFILLER_13_111 VDD GND sg13g2_decap_8

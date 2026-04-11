@@ -42,3 +42,7 @@ C {noconn.sym} 140 110 2 0 {name=l2}
 C {vdd.sym} -140 -40 0 1 {name=l4 lab=VDD}
 C {gnd.sym} -140 40 0 1 {name=l14 lab=GND}
 C {lab_pin.sym} -40 0 1 0 {name=p16 sig_type=std_logic lab=nRST}
+C {code_shown.sym} -410 180 0 0 {name=INCLUDE only_toplevel=false 
+value="
+.include $env(PDK_ROOT)/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+"}
