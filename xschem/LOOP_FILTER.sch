@@ -16,6 +16,10 @@ N 180 -0 300 -0 {lab=OUT}
 N -260 -0 -80 0 {lab=IN}
 N 180 200 220 200 {lab=GND}
 N 180 130 180 200 {lab=GND}
+N -290 200 -290 240 {lab=GND}
+N -290 100 -290 140 {lab=sub!}
+N 400 200 400 240 {lab=GND}
+N 400 100 400 140 {lab=sub!}
 C {opin.sym} 300 0 0 0 {name=p4 lab=OUT}
 C {gnd.sym} -80 240 0 0 {name=l4 lab=GND}
 C {sg13g2_pr/cap_cmim.sym} 180 100 0 1 {name=C2
@@ -51,3 +55,21 @@ b=0
 m=1
 }
 C {gnd.sym} 180 240 0 0 {name=l1 lab=GND}
+C {sg13g2_pr/ptap1_ring.sym} -290 170 2 0 {name=R3
+model=ptap1
+spiceprefix=X
+w=46.342e-6
+l=32.18e-6
+rw=0.3e-6
+}
+C {gnd.sym} -290 240 0 0 {name=l3 lab=GND}
+C {sg13g2_pr/ptap1_ring.sym} 400 170 2 0 {name=R4
+model=ptap1
+spiceprefix=X
+w=46.342e-6
+l=32.18e-6
+rw=0.3e-6
+}
+C {gnd.sym} 400 240 0 0 {name=l6 lab=GND}
+C {lab_pin.sym} -290 100 3 1 {name=p34 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 400 100 3 1 {name=p2 sig_type=std_logic lab=sub!}
