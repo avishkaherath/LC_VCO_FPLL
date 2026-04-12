@@ -16,49 +16,43 @@ N 1100 -370 1100 -350 {lab=GND}
 N 1100 -730 1100 -690 {lab=#net1}
 N 1140 -520 1180 -520 {lab=Vbn}
 N 1280 -420 1370 -420 {lab=DN}
-N 1410 -520 1470 -520 {lab=GND}
-N 1410 -810 1410 -790 {lab=VDD}
+N 1410 -520 1470 -520 {lab=bulk2}
 N 1280 -760 1370 -760 {lab=UP}
-N 1410 -660 1470 -660 {lab=VDD}
+N 1410 -660 1470 -660 {lab=bulk1}
 N 880 -730 880 -690 {lab=#net2}
 N 1140 -420 1180 -420 {lab=VDD}
 N 1140 -660 1370 -660 {lab=Vbp}
 N 920 -660 960 -660 {lab=Vbp}
 N 1100 -590 1100 -550 {lab=Vbn}
-N 1410 -760 1470 -760 {lab=VDD}
-N 1470 -810 1470 -760 {lab=VDD}
-N 1410 -810 1470 -810 {lab=VDD}
-N 1410 -830 1410 -810 {lab=VDD}
+N 1410 -760 1470 -760 {lab=bulk1}
+N 1470 -810 1470 -760 {lab=bulk1}
+N 1410 -830 1410 -790 {lab=VDD}
 N 1410 -730 1410 -690 {lab=#net3}
 N 1410 -590 1410 -550 {lab=VCP}
 N 1410 -490 1410 -450 {lab=#net4}
-N 1410 -370 1410 -350 {lab=GND}
-N 1470 -760 1470 -660 {lab=VDD}
-N 1410 -370 1470 -370 {lab=GND}
-N 1470 -420 1470 -370 {lab=GND}
-N 1410 -420 1470 -420 {lab=GND}
-N 1410 -390 1410 -370 {lab=GND}
-N 1470 -520 1470 -420 {lab=GND}
+N 1470 -760 1470 -660 {lab=bulk1}
+N 1470 -420 1470 -370 {lab=bulk2}
+N 1410 -420 1470 -420 {lab=bulk2}
+N 1410 -390 1410 -350 {lab=GND}
+N 1470 -520 1470 -420 {lab=bulk2}
 N 1410 -590 1560 -590 {lab=VCP}
 N 1410 -630 1410 -590 {lab=VCP}
 N 1280 -420 1280 -360 {lab=DN}
 N 1280 -820 1280 -760 {lab=UP}
 N 1180 -450 1180 -420 {lab=VDD}
-N 1040 -520 1100 -520 {lab=GND}
-N 1040 -370 1100 -370 {lab=GND}
-N 1040 -420 1040 -370 {lab=GND}
-N 1040 -420 1100 -420 {lab=GND}
-N 1040 -440 1040 -420 {lab=GND}
+N 1040 -520 1100 -520 {lab=bulk2}
+N 1040 -420 1040 -370 {lab=bulk2}
+N 1040 -420 1100 -420 {lab=bulk2}
 N 1100 -390 1100 -370 {lab=GND}
 N 1180 -590 1180 -520 {lab=Vbn}
 N 1100 -590 1180 -590 {lab=Vbn}
 N 1140 -760 1180 -760 {lab=GND}
 N 1180 -760 1180 -730 {lab=GND}
-N 1040 -760 1100 -760 {lab=VDD}
-N 1040 -810 1040 -760 {lab=VDD}
-N 1040 -810 1100 -810 {lab=VDD}
-N 1040 -760 1040 -660 {lab=VDD}
-N 1040 -660 1100 -660 {lab=VDD}
+N 1040 -760 1100 -760 {lab=bulk1}
+N 1040 -810 1040 -760 {lab=bulk1}
+N 1100 -810 1160 -810 {lab=VDD}
+N 1040 -760 1040 -660 {lab=bulk1}
+N 1040 -660 1100 -660 {lab=bulk1}
 N 1100 -810 1100 -790 {lab=VDD}
 N 1100 -830 1100 -810 {lab=VDD}
 N 1100 -630 1100 -590 {lab=Vbn}
@@ -69,23 +63,27 @@ N 880 -630 880 -590 {lab=Vbp}
 N 1100 -490 1100 -450 {lab=#net5}
 N 920 -760 960 -760 {lab=GND}
 N 960 -760 960 -730 {lab=GND}
-N 880 -810 880 -790 {lab=VDD}
-N 820 -760 880 -760 {lab=VDD}
-N 820 -810 820 -760 {lab=VDD}
-N 820 -810 880 -810 {lab=VDD}
-N 820 -760 820 -660 {lab=VDD}
-N 820 -660 880 -660 {lab=VDD}
-N 880 -830 880 -810 {lab=VDD}
-N 880 -470 880 -450 {lab=GND}
-N 880 -470 940 -470 {lab=GND}
-N 940 -520 940 -470 {lab=GND}
-N 880 -520 940 -520 {lab=GND}
-N 880 -490 880 -470 {lab=GND}
+N 820 -760 880 -760 {lab=bulk1}
+N 820 -810 820 -760 {lab=bulk1}
+N 820 -760 820 -660 {lab=bulk1}
+N 820 -660 880 -660 {lab=bulk1}
+N 880 -830 880 -790 {lab=VDD}
+N 880 -520 940 -520 {lab=bulk2}
+N 880 -490 880 -450 {lab=GND}
 N 880 -590 880 -550 {lab=Vbp}
 N 720 -520 840 -520 {lab=VBGR}
-N 1000 -810 1040 -810 {lab=VDD}
-N 1000 -440 1040 -440 {lab=GND}
-N 1040 -520 1040 -440 {lab=GND}
+N 1100 -370 1140 -370 {lab=GND}
+N 1040 -520 1040 -420 {lab=bulk2}
+N 1840 -830 1840 -820 {lab=VDD}
+N 1710 -830 1710 -820 {lab=VDD}
+N 1840 -540 1840 -530 {lab=GND}
+N 1840 -610 1840 -600 {lab=sub!}
+N 1840 -350 1840 -340 {lab=GND}
+N 1840 -420 1840 -410 {lab=bulk2}
+N 1710 -760 1710 -750 {lab=bulk1}
+N 1840 -760 1840 -750 {lab=bulk1}
+N 1710 -350 1710 -340 {lab=GND}
+N 1710 -420 1710 -410 {lab=bulk2}
 C {opin.sym} 1560 -590 0 0 {name=p4 lab=VCP}
 C {ipin.sym} 1280 -820 1 0 {name=p12 lab=UP}
 C {ipin.sym} 1280 -360 3 0 {name=p20 lab=DN}
@@ -107,7 +105,7 @@ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {lab_pin.sym} 1280 -520 3 0 {name=p11 sig_type=std_logic lab=Vbn}
-C {iopin.sym} 1000 -440 0 1 {name=p3 lab=GND}
+C {iopin.sym} 1140 -370 0 0 {name=p3 lab=GND}
 C {gnd.sym} 1410 -350 0 0 {name=l3 lab=GND}
 C {gnd.sym} 1100 -350 0 0 {name=l5 lab=GND}
 C {vdd.sym} 880 -830 0 0 {name=l12 lab=VDD}
@@ -196,4 +194,55 @@ nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {iopin.sym} 1000 -810 2 0 {name=p1 lab=VDD}
+C {iopin.sym} 1160 -810 2 1 {name=p1 lab=VDD}
+C {lab_pin.sym} 820 -810 1 0 {name=p6 sig_type=std_logic lab=bulk1}
+C {lab_pin.sym} 1040 -810 1 0 {name=p7 sig_type=std_logic lab=bulk1}
+C {lab_pin.sym} 1470 -810 1 0 {name=p8 sig_type=std_logic lab=bulk1}
+C {sg13g2_pr/ntap1_ring.sym} 1840 -790 0 1 {name=R1
+model=ntap1
+spiceprefix=X
+w=50.92e-6
+l=31.56e-6
+rw=0.3e-6
+}
+C {lab_pin.sym} 1840 -750 3 0 {name=p9 sig_type=std_logic lab=bulk1}
+C {vdd.sym} 1840 -830 0 1 {name=l1 lab=VDD}
+C {sg13g2_pr/ntap1_ring.sym} 1710 -790 0 1 {name=R2
+model=ntap1
+spiceprefix=X
+w=43.4e-6
+l=10.54e-6
+rw=0.3e-6
+}
+C {lab_pin.sym} 1710 -750 3 0 {name=p10 sig_type=std_logic lab=bulk1}
+C {vdd.sym} 1710 -830 0 1 {name=l2 lab=VDD}
+C {lab_pin.sym} 940 -520 2 0 {name=p13 sig_type=std_logic lab=bulk2}
+C {sg13g2_pr/ptap1_ring.sym} 1840 -570 2 0 {name=R3
+model=ptap1
+spiceprefix=X
+w=5.68e-6
+l=7.26e-6
+rw=0.3e-6
+}
+C {lab_pin.sym} 1840 -610 3 1 {name=p14 sig_type=std_logic lab=bulk2}
+C {gnd.sym} 1840 -530 0 1 {name=l4 lab=GND}
+C {lab_pin.sym} 1040 -370 1 1 {name=p15 sig_type=std_logic lab=bulk2}
+C {lab_pin.sym} 1470 -370 1 1 {name=p17 sig_type=std_logic lab=bulk2}
+C {sg13g2_pr/ptap1_ring.sym} 1840 -380 2 0 {name=R4
+model=ptap1
+spiceprefix=X
+w=30e-6
+l=12.54e-6
+rw=0.3e-6
+}
+C {lab_pin.sym} 1840 -420 3 1 {name=p18 sig_type=std_logic lab=bulk2}
+C {gnd.sym} 1840 -340 0 1 {name=l8 lab=GND}
+C {sg13g2_pr/ptap1_ring.sym} 1710 -380 2 0 {name=R5
+model=ptap1
+spiceprefix=X
+w=20e-6
+l=6e-6
+rw=0.3e-6
+}
+C {lab_pin.sym} 1710 -420 3 1 {name=p19 sig_type=std_logic lab=bulk2}
+C {gnd.sym} 1710 -340 0 1 {name=l9 lab=GND}
