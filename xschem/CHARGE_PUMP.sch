@@ -8,10 +8,17 @@ E {}
 L 4 1320 -890 1520 -890 {}
 L 4 760 -360 960 -360 {}
 L 4 960 -360 960 -300 {}
+L 4 1600 -890 1880 -890 {}
+L 4 1600 -950 1600 -660 {}
+L 4 1600 -660 1720 -660 {}
+L 4 1720 -660 1720 -500 {}
+L 4 1600 -500 1720 -500 {}
 P 4 5 1320 -950 1520 -950 1520 -300 1320 -300 1320 -950 {}
 P 4 5 760 -890 1240 -890 1240 -300 760 -300 760 -890 {}
+P 4 5 1600 -950 1880 -950 1880 -300 1600 -300 1600 -500 {}
 T {Bias Generator} 780 -340 0 0 0.4 0.4 {}
 T {Charge Pump} 1350 -930 0 0 0.4 0.4 {}
+T {Guard Rings} 1670 -930 0 0 0.4 0.4 {}
 N 1100 -370 1100 -350 {lab=GND}
 N 1100 -730 1100 -690 {lab=#net1}
 N 1140 -520 1180 -520 {lab=Vbn}
@@ -77,7 +84,7 @@ N 1040 -520 1040 -420 {lab=bulk2}
 N 1840 -830 1840 -820 {lab=VDD}
 N 1710 -830 1710 -820 {lab=VDD}
 N 1840 -540 1840 -530 {lab=GND}
-N 1840 -610 1840 -600 {lab=sub!}
+N 1840 -610 1840 -600 {lab=bulk2}
 N 1840 -350 1840 -340 {lab=GND}
 N 1840 -420 1840 -410 {lab=bulk2}
 N 1710 -760 1710 -750 {lab=bulk1}
@@ -201,8 +208,8 @@ C {lab_pin.sym} 1470 -810 1 0 {name=p8 sig_type=std_logic lab=bulk1}
 C {sg13g2_pr/ntap1_ring.sym} 1840 -790 0 1 {name=R1
 model=ntap1
 spiceprefix=X
-w=50.92e-6
-l=31.56e-6
+w=51e-6
+l=36e-6
 rw=0.3e-6
 }
 C {lab_pin.sym} 1840 -750 3 0 {name=p9 sig_type=std_logic lab=bulk1}
@@ -210,8 +217,8 @@ C {vdd.sym} 1840 -830 0 1 {name=l1 lab=VDD}
 C {sg13g2_pr/ntap1_ring.sym} 1710 -790 0 1 {name=R2
 model=ntap1
 spiceprefix=X
-w=43.4e-6
-l=10.54e-6
+w=30.5e-6
+l=15.5e-6
 rw=0.3e-6
 }
 C {lab_pin.sym} 1710 -750 3 0 {name=p10 sig_type=std_logic lab=bulk1}
