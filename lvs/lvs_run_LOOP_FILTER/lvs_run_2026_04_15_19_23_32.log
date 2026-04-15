@@ -1,0 +1,16 @@
+15-Apr-2026 21:23:32 | INFO    | Your Klayout version is: KLayout 0.30.5
+15-Apr-2026 21:23:32 | INFO    | Running SG13G2 LVS checks on design /home/designer/shared/LC_VCO_FPLL/gds/blocks/LOOP_FILTER.gds on cell LOOP_FILTER
+15-Apr-2026 21:23:36 | INFO    | ==============================================================================
+15-Apr-2026 21:23:36 | INFO    | Important Summary
+15-Apr-2026 21:23:36 | INFO    | +------------------+--------------------------------------------------------------+
+15-Apr-2026 21:23:36 | INFO    | | Status           | PASS                                                         |
+15-Apr-2026 21:23:36 | INFO    | | Mode             | COMPARE                                                      |
+15-Apr-2026 21:23:36 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                      |
+15-Apr-2026 21:23:36 | INFO    | | Layout           | LOOP_FILTER.gds                                              |
+15-Apr-2026 21:23:36 | INFO    | | Top Cell         | LOOP_FILTER                                                  |
+15-Apr-2026 21:23:36 | INFO    | | Results Dir      | /home/designer/shared/LC_VCO_FPLL/lvs/lvs_run_LOOP_FILTER    |
+15-Apr-2026 21:23:36 | INFO    | | Warnings         | 0                                                            |
+15-Apr-2026 21:23:36 | INFO    | | Errors           | 0                                                            |
+15-Apr-2026 21:23:36 | INFO    | | Run Time (s)     | 3.814                                                        |
+15-Apr-2026 21:23:36 | INFO    | +------------------+--------------------------------------------------------------+
+15-Apr-2026 21:23:36 | INFO    | ==============================================================================

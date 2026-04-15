@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 L 4 400 -120 580 -120 {}
 P 4 5 400 -180 400 260 580 260 580 -180 400 -180 {}
@@ -58,21 +57,21 @@ b=0
 m=1
 }
 C {gnd.sym} 180 240 0 0 {name=l1 lab=GND}
-C {sg13g2_pr/ptap1_ring.sym} 520 -10 2 0 {name=R3
-model=ptap1
-spiceprefix=X
-w=46.34e-6
-l=32.18e-6
-rw=0.3e-6
-}
 C {gnd.sym} 520 40 0 0 {name=l3 lab=GND}
-C {sg13g2_pr/ptap1_ring.sym} 520 170 2 0 {name=R4
-model=ptap1
-spiceprefix=X
-w=46.34e-6
-l=32.18e-6
-rw=0.3e-6
-}
 C {gnd.sym} 520 220 0 0 {name=l6 lab=GND}
 C {lab_pin.sym} 520 -60 3 1 {name=p34 sig_type=std_logic lab=sub!}
 C {lab_pin.sym} 520 120 3 1 {name=p2 sig_type=std_logic lab=sub!}
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 520 -10 2 0 {name=R3
+model=ptap1
+spiceprefix=X
+w=46.34e-6
+l=32.18e-6
+rw=0.3e-6
+}
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 520 170 2 0 {name=R4
+model=ptap1
+spiceprefix=X
+w=46.34e-6
+l=32.18e-6
+rw=0.3e-6
+}

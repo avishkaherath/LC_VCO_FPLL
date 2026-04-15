@@ -1,11 +1,11 @@
-** sch_path: /foss/designs/uniccass-icdesign-tools/shared_xserver/LC_VCO_FPLL/xschem/LOOP_FILTER.sch
+** sch_path: /home/designer/shared/LC_VCO_FPLL/xschem/LOOP_FILTER.sch
 .subckt LOOP_FILTER OUT IN GND
 *.PININFO OUT:O GND:B IN:I
-C2 OUT GND cap_cmim w=18.63e-6 l=18.63e-6 m=4
-C1 net1 GND cap_cmim w=48.34e-6 l=48.34e-6 m=16
-R2 OUT IN rppd w=2e-6 l=407.2e-6 m=1 b=0
-R1 net1 IN rppd w=2e-6 l=407.2e-6 m=1 b=0
-R3 GND sub! ptap1 A=4.675e-11 P=0.0003117
-R4 GND sub! ptap1 A=4.675e-11 P=0.0003117
+CC2 OUT GND cap_cmim w=18.63e-6 l=18.63e-6 m=4
+CC1 net1 GND cap_cmim w=48.34e-6 l=48.34e-6 m=16
+RR2 OUT IN -14840.7142857143 $SUB=sub! $[rppd] w=2e-6 l=407.2e-6 b=0 m=1
+RR1 net1 IN -14840.7142857143 $SUB=sub! $[rppd] w=2e-6 l=407.2e-6 b=0 m=1
+RR3 GND sub! ptap1 A=4.6752e-11 P=0.00031168
+RR4 GND sub! ptap1 A=4.6752e-11 P=0.00031168
 .ends
 .GLOBAL GND
