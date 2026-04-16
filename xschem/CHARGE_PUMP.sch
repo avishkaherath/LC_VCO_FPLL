@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 L 4 1320 -890 1520 -890 {}
 L 4 760 -360 960 -360 {}
@@ -205,7 +204,7 @@ C {iopin.sym} 1160 -810 2 1 {name=p1 lab=VDD}
 C {lab_pin.sym} 820 -810 1 0 {name=p6 sig_type=std_logic lab=bulk1}
 C {lab_pin.sym} 1040 -810 1 0 {name=p7 sig_type=std_logic lab=bulk1}
 C {lab_pin.sym} 1470 -810 1 0 {name=p8 sig_type=std_logic lab=bulk1}
-C {sg13g2_pr/ntap1_ring.sym} 1840 -790 0 1 {name=R1
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1840 -790 0 1 {name=R1
 model=ntap1
 spiceprefix=X
 w=51e-6
@@ -214,7 +213,7 @@ rw=0.3e-6
 }
 C {lab_pin.sym} 1840 -750 3 0 {name=p9 sig_type=std_logic lab=bulk1}
 C {vdd.sym} 1840 -830 0 1 {name=l1 lab=VDD}
-C {sg13g2_pr/ntap1_ring.sym} 1710 -790 0 1 {name=R2
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1710 -790 0 1 {name=R2
 model=ntap1
 spiceprefix=X
 w=30.5e-6
@@ -224,7 +223,7 @@ rw=0.3e-6
 C {lab_pin.sym} 1710 -750 3 0 {name=p10 sig_type=std_logic lab=bulk1}
 C {vdd.sym} 1710 -830 0 1 {name=l2 lab=VDD}
 C {lab_pin.sym} 940 -520 2 0 {name=p13 sig_type=std_logic lab=bulk2}
-C {sg13g2_pr/ptap1_ring.sym} 1840 -570 2 0 {name=R3
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1840 -570 2 0 {name=R3
 model=ptap1
 spiceprefix=X
 w=5.68e-6
@@ -235,7 +234,7 @@ C {lab_pin.sym} 1840 -610 3 1 {name=p14 sig_type=std_logic lab=bulk2}
 C {gnd.sym} 1840 -530 0 1 {name=l4 lab=GND}
 C {lab_pin.sym} 1040 -370 1 1 {name=p15 sig_type=std_logic lab=bulk2}
 C {lab_pin.sym} 1470 -370 1 1 {name=p17 sig_type=std_logic lab=bulk2}
-C {sg13g2_pr/ptap1_ring.sym} 1840 -380 2 0 {name=R4
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1840 -380 2 0 {name=R4
 model=ptap1
 spiceprefix=X
 w=30e-6
@@ -244,7 +243,7 @@ rw=0.3e-6
 }
 C {lab_pin.sym} 1840 -420 3 1 {name=p18 sig_type=std_logic lab=bulk2}
 C {gnd.sym} 1840 -340 0 1 {name=l8 lab=GND}
-C {sg13g2_pr/ptap1_ring.sym} 1710 -380 2 0 {name=R5
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1710 -380 2 0 {name=R5
 model=ptap1
 spiceprefix=X
 w=20e-6
