@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/uniccass-icdesign-tools/shared_xserver/LC_VCO_FPLL/xschem/PFD_CP_LF.sch
+** sch_path: /home/designer/shared/LC_VCO_FPLL/xschem/PHASE_FREQ_DET.sch
 .subckt PFD_CP_LF CLK_IN VCTRL VDD VSS CLK_FB VBGR
 *.PININFO CLK_IN:I VCTRL:O VDD:B VSS:B CLK_FB:I VBGR:B
 x1 CLK_IN UP VDD VSS CLK_FB DN PHASE_FREQ_DET
