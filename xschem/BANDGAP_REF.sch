@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 1500 -1405 1500 -1350 {
 lab=#net1}
@@ -509,7 +508,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 1395 -760 0 0 {name=p53 sig_type=std_logic lab=dn2}
 C {lab_pin.sym} 1590 -760 0 0 {name=p54 sig_type=std_logic lab=dn2}
-C {sg13g2_pr/ntap1_ring.sym} 1290 -430 2 0 {name=R4
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1290 -430 2 0 {name=R4
 model=ntap1
 spiceprefix=X
 w=33.53e-6
@@ -532,7 +531,7 @@ spiceprefix=X
 C {iopin.sym} 880 -1055 1 0 {name=p30 lab=GND}
 C {iopin.sym} 880 -1590 1 1 {name=p31 lab=VDD}
 C {lab_pin.sym} 695 -1130 0 1 {name=p32 sig_type=std_logic lab=sub!}
-C {sg13g2_pr/ptap1_ring.sym} 1285 -260 2 0 {name=R5
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1285 -260 2 0 {name=R5
 model=ptap1
 spiceprefix=X
 w=12.57e-6
@@ -541,7 +540,7 @@ rw=0.72e-6
 }
 C {lab_pin.sym} 1285 -315 0 1 {name=p34 sig_type=std_logic lab=sub!}
 C {lab_pin.sym} 1445 -485 0 1 {name=p36 sig_type=std_logic lab=bulk1}
-C {sg13g2_pr/ntap1_ring.sym} 1445 -430 2 0 {name=R6
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1445 -430 2 0 {name=R6
 model=ntap1
 spiceprefix=X
 w=6.765e-6
@@ -601,7 +600,7 @@ C {lab_pin.sym} 960 -1165 0 1 {name=p45 sig_type=std_logic lab=sub!}
 C {lab_pin.sym} 75 -1530 0 0 {name=p46 sig_type=std_logic lab=bulk4}
 C {lab_pin.sym} 950 -1525 2 0 {name=p47 sig_type=std_logic lab=bulk4}
 C {lab_pin.sym} 1620 -495 0 1 {name=p48 sig_type=std_logic lab=bulk4}
-C {sg13g2_pr/ntap1_ring.sym} 1620 -435 2 0 {name=R8
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1620 -435 2 0 {name=R8
 model=ntap1
 spiceprefix=X
 w=23.54e-6
@@ -616,7 +615,7 @@ C {lab_pin.sym} 325 -1385 3 0 {name=p18 sig_type=std_logic lab=v-}
 C {lab_pin.sym} 675 -1385 0 1 {name=p19 sig_type=std_logic lab=v+}
 C {lab_pin.sym} 1810 -1205 3 0 {name=p1 sig_type=std_logic lab=v-}
 C {lab_pin.sym} 1945 -495 0 1 {name=p7 sig_type=std_logic lab=bulk6}
-C {sg13g2_pr/ntap1_ring.sym} 1945 -435 2 0 {name=R9
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1945 -435 2 0 {name=R9
 model=ntap1
 spiceprefix=X
 w=5.76e-6
@@ -748,7 +747,7 @@ m=1
 C {lab_pin.sym} 1435 -1320 0 0 {name=p63 sig_type=std_logic lab=sub!}
 C {lab_pin.sym} 1800 -1405 0 1 {name=p64 sig_type=std_logic lab=bulk5}
 C {lab_pin.sym} 1780 -495 0 1 {name=p65 sig_type=std_logic lab=bulk5}
-C {sg13g2_pr/ntap1_ring.sym} 1780 -435 2 0 {name=R26
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1780 -435 2 0 {name=R26
 model=ntap1
 spiceprefix=X
 w=7.37e-6
@@ -756,14 +755,14 @@ l=3.03e-6
 rw=0.72e-6
 }
 C {lab_pin.sym} 2115 -490 0 1 {name=p67 sig_type=std_logic lab=bulk7}
-C {sg13g2_pr/ntap1_ring.sym} 2115 -430 2 0 {name=R27
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 2115 -430 2 0 {name=R27
 model=ntap1
 spiceprefix=X
 w=46.185e-6
 l=10.815e-6
 rw=0.72e-6
 }
-C {sg13g2_pr/ptap1_ring.sym} 1445 -255 2 0 {name=R7
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1445 -255 2 0 {name=R7
 model=ptap1
 spiceprefix=X
 w=2.73e-6
@@ -771,7 +770,7 @@ l=12.92e-6
 rw=0.72e-6
 }
 C {lab_pin.sym} 1445 -310 0 1 {name=p44 sig_type=std_logic lab=sub!}
-C {sg13g2_pr/ptap1_ring.sym} 1620 -255 2 0 {name=R10
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1620 -255 2 0 {name=R10
 model=ptap1
 spiceprefix=X
 w=46.215e-6
@@ -779,7 +778,7 @@ l=5.225e-6
 rw=0.72e-6
 }
 C {lab_pin.sym} 1620 -310 0 1 {name=p59 sig_type=std_logic lab=sub!}
-C {sg13g2_pr/ptap1_ring.sym} 1780 -255 2 0 {name=R11
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1780 -255 2 0 {name=R11
 model=ptap1
 spiceprefix=X
 w=4.985e-6
@@ -787,7 +786,7 @@ l=24.045e-6
 rw=0.72e-6
 }
 C {lab_pin.sym} 1780 -310 0 1 {name=p61 sig_type=std_logic lab=sub!}
-C {sg13g2_pr/ptap1_ring.sym} 1940 -255 2 0 {name=R28
+C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1940 -255 2 0 {name=R28
 model=ptap1
 spiceprefix=X
 w=9.24e-6
