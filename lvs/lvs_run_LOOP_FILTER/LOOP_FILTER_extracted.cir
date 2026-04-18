@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 15/04/2026 21:23
+* Extracted by KLayout with SG13G2 LVS runset on : 18/04/2026 13:19
 
 .SUBCKT LOOP_FILTER VSS OUT IN
 R$1 VSS \$1 ptap1 A=93.504p P=623.36u
