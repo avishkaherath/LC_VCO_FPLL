@@ -185,13 +185,13 @@ lab=GND}
 N 1285 -230 1285 -190 {
 lab=GND}
 N 1285 -315 1285 -290 {
-lab=sub!}
+lab=SUB!}
 N 605 -1130 695 -1130 {
-lab=sub!}
+lab=SUB!}
 N 395 -1100 395 -1070 {
 lab=GND}
-N 300 -1130 395 -1130 {
-lab=sub!}
+N 305 -1130 395 -1130 {
+lab=SUB!}
 N 605 -1100 605 -1070 {
 lab=GND}
 N 1445 -400 1445 -365 {
@@ -235,7 +235,7 @@ lab=Vo1}
 N 880 -1140 880 -1070 {
 lab=GND}
 N 880 -1165 960 -1165 {
-lab=sub!}
+lab=SUB!}
 N 880 -1575 880 -1555 {
 lab=VDD}
 N 75 -1530 140 -1530 {
@@ -267,9 +267,9 @@ lab=GND}
 N 360 -145 510 -145 {
 lab=GND}
 N 150 -245 210 -245 {
-lab=sub!}
+lab=SUB!}
 N 510 -245 565 -245 {
-lab=sub!}
+lab=SUB!}
 N 510 -350 510 -305 {
 lab=#net3}
 N 510 -425 510 -410 {
@@ -307,7 +307,7 @@ lab=v+}
 N 1500 -1290 1500 -1265 {
 lab=GND}
 N 1435 -1320 1500 -1320 {
-lab=sub!}
+lab=SUB!}
 N 1735 -1535 1735 -1435 {
 lab=VDD}
 N 1735 -1405 1800 -1405 {
@@ -323,19 +323,19 @@ lab=VDD}
 N 1445 -225 1445 -190 {
 lab=GND}
 N 1445 -310 1445 -285 {
-lab=sub!}
+lab=SUB!}
 N 1620 -225 1620 -190 {
 lab=GND}
 N 1620 -310 1620 -285 {
-lab=sub!}
+lab=SUB!}
 N 1780 -225 1780 -190 {
 lab=GND}
 N 1780 -310 1780 -285 {
-lab=sub!}
+lab=SUB!}
 N 1940 -225 1940 -190 {
 lab=GND}
 N 1940 -310 1940 -285 {
-lab=sub!}
+lab=SUB!}
 N 1945 -700 1945 -675 {lab=VDD}
 N 1945 -620 1945 -595 {lab=GND}
 N 675 -340 675 -145 {lab=GND}
@@ -360,6 +360,10 @@ N 1620 -365 1780 -365 {lab=VDD}
 N 1285 -190 1445 -190 {lab=GND}
 N 1445 -190 1620 -190 {lab=GND}
 N 1620 -190 1780 -190 {lab=GND}
+N 2000 -310 2030 -310 {lab=SUB!}
+N 1940 -310 2000 -310 {lab=SUB!}
+N 2000 -260 2030 -260 {lab=SUB!}
+N 2000 -310 2000 -260 {lab=SUB!}
 C {sg13g2_pr/sg13_lv_nmos.sym} 1520 -1320 2 0 {name=M8
 l=10u
 w=150n
@@ -508,7 +512,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 1395 -760 0 0 {name=p53 sig_type=std_logic lab=dn2}
 C {lab_pin.sym} 1590 -760 0 0 {name=p54 sig_type=std_logic lab=dn2}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1290 -430 2 0 {name=R4
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 1290 -430 2 0 {name=R4
 model=ntap1
 spiceprefix=X
 w=33.53e-6
@@ -530,17 +534,17 @@ spiceprefix=X
 }
 C {iopin.sym} 880 -1055 1 0 {name=p30 lab=GND}
 C {iopin.sym} 880 -1590 1 1 {name=p31 lab=VDD}
-C {lab_pin.sym} 695 -1130 0 1 {name=p32 sig_type=std_logic lab=sub!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1285 -260 2 0 {name=R5
+C {lab_pin.sym} 695 -1130 0 1 {name=p32 sig_type=std_logic lab=SUB!}
+C {xschem/pdk_custom_SYM/ptap1_ring.sym} 1285 -260 2 0 {name=R5
 model=ptap1
 spiceprefix=X
 w=12.57e-6
 l=4.39e-6
 rw=0.72e-6
 }
-C {lab_pin.sym} 1285 -315 0 1 {name=p34 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 1285 -315 0 1 {name=p34 sig_type=std_logic lab=SUB!}
 C {lab_pin.sym} 1445 -485 0 1 {name=p36 sig_type=std_logic lab=bulk1}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1445 -430 2 0 {name=R6
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 1445 -430 2 0 {name=R6
 model=ntap1
 spiceprefix=X
 w=6.765e-6
@@ -564,7 +568,7 @@ m=1
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {lab_pin.sym} 305 -1130 0 0 {name=p38 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 305 -1130 0 0 {name=p38 sig_type=std_logic lab=SUB!}
 C {sg13g2_pr/sg13_lv_pmos.sym} 860 -1525 0 0 {name=M19
 l=2.08u
 w=75u
@@ -596,11 +600,11 @@ w=22.29e-6
 l=22.29e-6
 m=1
 spiceprefix=X}
-C {lab_pin.sym} 960 -1165 0 1 {name=p45 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 960 -1165 0 1 {name=p45 sig_type=std_logic lab=SUB!}
 C {lab_pin.sym} 75 -1530 0 0 {name=p46 sig_type=std_logic lab=bulk4}
 C {lab_pin.sym} 950 -1525 2 0 {name=p47 sig_type=std_logic lab=bulk4}
 C {lab_pin.sym} 1620 -495 0 1 {name=p48 sig_type=std_logic lab=bulk4}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1620 -435 2 0 {name=R8
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 1620 -435 2 0 {name=R8
 model=ntap1
 spiceprefix=X
 w=23.54e-6
@@ -615,15 +619,16 @@ C {lab_pin.sym} 325 -1385 3 0 {name=p18 sig_type=std_logic lab=v-}
 C {lab_pin.sym} 675 -1385 0 1 {name=p19 sig_type=std_logic lab=v+}
 C {lab_pin.sym} 1810 -1205 3 0 {name=p1 sig_type=std_logic lab=v-}
 C {lab_pin.sym} 1945 -495 0 1 {name=p7 sig_type=std_logic lab=bulk6}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1945 -435 2 0 {name=R9
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 1945 -435 2 0 {name=R9
 model=ntap1
 spiceprefix=X
 w=5.76e-6
 l=10.255e-6
 rw=0.72e-6
 }
-C {lab_pin.sym} 150 -245 0 0 {name=p40 sig_type=std_logic lab=sub!}
-C {lab_pin.sym} 565 -245 0 1 {name=p57 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 150 -245 0 0 {name=p40 sig_type=std_logic lab=SUB!}
+C {lab_pin.sym} 565 -245 0 1 {name=p57 sig_type=std_logic lab=SUB!
+}
 C {sg13g2_pr/rppd.sym} 510 -700 0 0 {name=R12
 w=0.5e-6
 l=38.65e-6
@@ -744,10 +749,10 @@ spiceprefix=X
 b=0
 m=1
 }
-C {lab_pin.sym} 1435 -1320 0 0 {name=p63 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 1435 -1320 0 0 {name=p63 sig_type=std_logic lab=SUB!}
 C {lab_pin.sym} 1800 -1405 0 1 {name=p64 sig_type=std_logic lab=bulk5}
 C {lab_pin.sym} 1780 -495 0 1 {name=p65 sig_type=std_logic lab=bulk5}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 1780 -435 2 0 {name=R26
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 1780 -435 2 0 {name=R26
 model=ntap1
 spiceprefix=X
 w=7.37e-6
@@ -755,45 +760,45 @@ l=3.03e-6
 rw=0.72e-6
 }
 C {lab_pin.sym} 2115 -490 0 1 {name=p67 sig_type=std_logic lab=bulk7}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ntap1_ring.sym} 2115 -430 2 0 {name=R27
+C {xschem/pdk_custom_SYM/ntap1_ring.sym} 2115 -430 2 0 {name=R27
 model=ntap1
 spiceprefix=X
 w=46.185e-6
 l=10.815e-6
 rw=0.72e-6
 }
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1445 -255 2 0 {name=R7
+C {xschem/pdk_custom_SYM/ptap1_ring.sym} 1445 -255 2 0 {name=R7
 model=ptap1
 spiceprefix=X
 w=2.73e-6
 l=12.92e-6
 rw=0.72e-6
 }
-C {lab_pin.sym} 1445 -310 0 1 {name=p44 sig_type=std_logic lab=sub!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1620 -255 2 0 {name=R10
+C {lab_pin.sym} 1445 -310 0 1 {name=p44 sig_type=std_logic lab=SUB!}
+C {xschem/pdk_custom_SYM/ptap1_ring.sym} 1620 -255 2 0 {name=R10
 model=ptap1
 spiceprefix=X
 w=46.215e-6
 l=5.225e-6
 rw=0.72e-6
 }
-C {lab_pin.sym} 1620 -310 0 1 {name=p59 sig_type=std_logic lab=sub!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1780 -255 2 0 {name=R11
+C {lab_pin.sym} 1620 -310 0 1 {name=p59 sig_type=std_logic lab=SUB!}
+C {xschem/pdk_custom_SYM/ptap1_ring.sym} 1780 -255 2 0 {name=R11
 model=ptap1
 spiceprefix=X
 w=4.985e-6
 l=24.045e-6
 rw=0.72e-6
 }
-C {lab_pin.sym} 1780 -310 0 1 {name=p61 sig_type=std_logic lab=sub!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/pdk_custom_SYM/ptap1_ring.sym} 1940 -255 2 0 {name=R28
+C {lab_pin.sym} 1780 -310 0 1 {name=p61 sig_type=std_logic lab=SUB!}
+C {xschem/pdk_custom_SYM/ptap1_ring.sym} 1940 -255 2 0 {name=R28
 model=ptap1
 spiceprefix=X
 w=9.24e-6
 l=42.505e-6
 rw=0.32e-6
 }
-C {lab_pin.sym} 1940 -310 0 1 {name=p80 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 2030 -310 0 1 {name=p80 sig_type=std_logic lab=SUB!}
 C {sg13g2_pr/cap_cmim.sym} 1945 -645 0 0 {name=C3
 model=cap_cmim
 w=5e-6
@@ -833,3 +838,4 @@ C {gnd.sym} 1540 -1265 0 0 {name=l12 lab=GND}
 C {gnd.sym} 360 -115 0 0 {name=l13 lab=GND}
 C {gnd.sym} 1945 -595 0 0 {name=l14 lab=GND}
 C {gnd.sym} 2025 -170 0 0 {name=l15 lab=GND}
+C {iopin.sym} 2030 -260 0 0 {name=p2 lab=SUB!}

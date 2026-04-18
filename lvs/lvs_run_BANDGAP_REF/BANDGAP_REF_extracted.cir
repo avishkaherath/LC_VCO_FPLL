@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 17/04/2026 18:47
+* Extracted by KLayout with SG13G2 LVS runset on : 18/04/2026 15:04
 
 .SUBCKT BANDGAP_REF GND VDD VBGR
 M$1 GND \$65 \$132 \$1 sg13_lv_nmos L=10u W=0.15u AS=0.1005p AD=0.1005p
@@ -46,8 +46,8 @@ R$82 \$79 \$46 \$1 rppd w=0.5u l=154.6u ps=0u b=0 m=1
 R$87 \$77 \$46 \$1 rppd w=0.5u l=193.25u ps=0u b=0 m=1
 R$94 VBGR GND \$1 rppd w=0.71u l=270.55u ps=0u b=0 m=1
 C$95 VDD GND cap_cmim w=5u l=5u A=25p P=20u m=15
-C$103 \$4 GND cap_cmim w=18.2u l=18.2u A=331.24p P=72.8u m=1
-C$111 \$5 \$18 cap_cmim w=22.29u l=22.29u A=496.8441p P=89.16u m=1
+C$97 \$4 GND cap_cmim w=18.2u l=18.2u A=331.24p P=72.8u m=1
+C$106 \$5 \$18 cap_cmim w=22.29u l=22.29u A=496.8441p P=89.16u m=1
 R$112 VDD \$107 ntap1 A=33.0912p P=183.84u
 R$113 VDD \$41 ntap1 A=80.0064p P=222.24u
 R$114 VDD \$47 ntap1 A=65.2608p P=181.28u
