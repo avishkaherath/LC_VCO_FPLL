@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/uniccass-icdesign-tools/shared_xserver/LC_VCO_FPLL/xschem/PHASE_FREQ_DET.sch
+** sch_path: /home/designer/shared/LC_VCO_FPLL/xschem/PHASE_FREQ_DET.sch
 .subckt PHASE_FREQ_DET FREF UP VDD GND FDIV DN
 *.PININFO UP:O FREF:I VDD:B GND:B DN:O FDIV:I
 x1 net1 UP FREF VDD nRST VDD GND sg13g2_dfrbp_2
@@ -8,6 +8,7 @@ x3 nRST net1 DN VDD GND sg13g2_nand2_2
 .ends
 .GLOBAL VDD
 .GLOBAL GND
+
 
 ************************************************************************
 * Library Name: sg13g2_stdcell
