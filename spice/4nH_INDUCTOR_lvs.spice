@@ -1,4 +1,0 @@
-.subckt 4nH_INDUCTOR 1 2
-* EM-extracted inductor — LVS black-box stub only
-* Full Y-parameter model in 4nH_INDUCTOR.spice
-.ends

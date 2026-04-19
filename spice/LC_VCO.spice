@@ -1,5 +1,5 @@
 ** sch_path: /home/designer/shared/LC_VCO_FPLL/xschem/LC_VCO.sch
-.SUBCKT LC_VCO VDD VCTRL GND FOUT VBGR
+.subckt LC_VCO VDD VCTRL GND FOUT VBGR
 *.PININFO FOUT:O VCTRL:I VBGR:I VDD:B GND:B
 MM5 Vx Vgs GND GND sg13_lv_nmos w=384u l=1u ng=48 m=1
 MM4 OUTp OUTn VDD VDD sg13_lv_pmos w=36u l=0.13u ng=5 m=1
@@ -19,10 +19,13 @@ x1 OUTn OUTp 4nH_INDUCTOR
 **** begin user architecture code
 
 
-.include /home/designer/shared/LC_VCO_FPLL/spice/4nH_INDUCTOR_lvs.spice
+.subckt 4nH_INDUCTOR 1 2
+* LVS black-box stub only
+* Full model is available in 4nH_INDUCTOR.spice
+.ends
 
 
 **** end user architecture code
-.ENDS
+.ends
 .GLOBAL GND
 .GLOBAL VDD

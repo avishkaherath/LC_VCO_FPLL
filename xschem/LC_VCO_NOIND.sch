@@ -105,12 +105,10 @@ N -360 -230 -360 -170 {lab=OUTp}
 N -600 -170 -580 -170 {lab=OUTn}
 N -580 -230 -580 -170 {lab=OUTn}
 N -470 -290 -470 -260 {lab=VCTRL}
-N 250 70 300 70 {lab=OUTp}
-N 120 70 160 70 {lab=OUTn}
 N 210 -50 210 0 {lab=GND}
 N 120 -80 180 -80 {lab=OUTn}
-N 120 -50 120 70 {lab=OUTn}
-N 300 -50 300 70 {lab=OUTp}
+N 120 -50 120 30 {lab=OUTn}
+N 300 -50 300 30 {lab=OUTp}
 N 240 -80 300 -80 {lab=OUTp}
 N 210 270 210 390 {lab=Vx}
 N 60 270 210 270 {
@@ -317,11 +315,5 @@ C {vdd.sym} -150 -160 0 0 {name=l9 lab=VDD}
 C {vdd.sym} 220 -350 0 0 {name=l7 lab=VDD}
 C {vdd.sym} 520 -340 0 0 {name=l4 lab=VDD}
 C {vdd.sym} 570 -160 0 0 {name=l12 lab=VDD}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
-C {code.sym} -210 280 0 0 {name=INDUCTOR only_toplevel=false 
-value="
-.subckt 4nH_INDUCTOR 1 2
-* LVS black-box stub only
-* Full model is available in 4nH_INDUCTOR.spice
-.ends
-"}
+C {iopin.sym} 120 30 1 0 {name=p12 lab=OUTn}
+C {iopin.sym} 300 30 1 0 {name=p15 lab=OUTp}
