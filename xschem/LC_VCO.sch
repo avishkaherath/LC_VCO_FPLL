@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 L 4 -680 -340 -360 -340 {}
 L 4 -360 -400 -360 -340 {}
@@ -318,8 +317,8 @@ C {vdd.sym} -150 -160 0 0 {name=l9 lab=VDD}
 C {vdd.sym} 220 -350 0 0 {name=l7 lab=VDD}
 C {vdd.sym} 520 -340 0 0 {name=l4 lab=VDD}
 C {vdd.sym} 570 -160 0 0 {name=l12 lab=VDD}
-C {/foss/designs/uniccass-icdesign-tools/shared_xserver/frac-n-pll-vco-smacd_2026/schematic/lc-vco/4nH_INDUCTOR.sym} 200 60 2 1 {name=x1}
 C {code_shown.sym} -220 310 0 0 {name=INCLUDE only_toplevel=false 
 value="
-.include 4nH_INDUCTOR.spice
+.include /home/designer/shared/LC_VCO_FPLL/spice/4nH_INDUCTOR_lvs.spice
 "}
+C {/home/designer/shared/LC_VCO_FPLL/xschem/4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
