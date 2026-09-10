@@ -104,7 +104,7 @@ N -360 -230 -360 -170 {lab=OUTp}
 N -600 -170 -580 -170 {lab=OUTn}
 N -580 -230 -580 -170 {lab=OUTn}
 N -470 -290 -470 -260 {lab=VCTRL}
-N 210 -50 210 0 {lab=sub!}
+N 210 -50 210 0 {lab=SUB!}
 N 120 -80 180 -80 {lab=OUTn}
 N 120 -50 120 70 {lab=OUTn}
 N 300 -50 300 70 {lab=OUTp}
@@ -161,7 +161,6 @@ N -720 -290 -470 -290 {lab=VCTRL}
 N 1070 -270 1070 -260 {lab=VDD}
 N 940 -270 940 -260 {lab=VDD}
 N 1070 20 1070 30 {lab=GND}
-N 1070 -50 1070 -40 {lab=sub!}
 N 1070 210 1070 220 {lab=GND}
 N 1070 140 1070 150 {lab=SUB!}
 N 940 -200 940 -190 {lab=NW}
@@ -182,6 +181,10 @@ N 1200 20 1200 30 {lab=GND}
 N 1200 -50 1200 -40 {lab=SUB!}
 N 940 -60 940 -50 {lab=VDD}
 N 940 10 940 20 {lab=NWa}
+N 1070 -130 1100 -130 {lab=SUB!}
+N 1070 -90 1100 -90 {lab=SUB!}
+N 1070 -130 1070 -90 {lab=SUB!}
+N 1070 -90 1070 -40 {lab=SUB!}
 C {/home/designer/shared/LC_VCO_FPLL/xschem/4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
 C {code.sym} -210 280 0 0 {name=INDUCTOR only_toplevel=false 
 value="
@@ -448,5 +451,6 @@ rw=0.3e-6
 }
 C {lab_pin.sym} 940 20 3 0 {name=p37 sig_type=std_logic lab=NWa}
 C {vdd.sym} 940 -60 0 1 {name=l24 lab=VDD}
-C {lab_pin.sym} 1070 -50 3 1 {name=p38 sig_type=std_logic lab=sub!}
-C {lab_pin.sym} 210 0 2 1 {name=p39 sig_type=std_logic lab=sub!}
+C {lab_pin.sym} 210 0 2 1 {name=p39 sig_type=std_logic lab=SUB!}
+C {lab_pin.sym} 1100 -130 0 1 {name=p80 sig_type=std_logic lab=SUB!}
+C {iopin.sym} 1100 -90 0 0 {name=p12 lab=SUB!}

@@ -39,6 +39,6 @@ C {noconn.sym} 140 110 2 0 {name=l2}
 C {vdd.sym} -140 -40 0 1 {name=l4 lab=VDD}
 C {gnd.sym} -140 40 0 1 {name=l14 lab=GND}
 C {lab_pin.sym} -40 0 1 0 {name=p16 sig_type=std_logic lab=nRST}
-C {sg13g2_dfrbp_2.sym} 10 -110 0 0 {name=x1 VDD=VDD VSS=GND prefix=sg13g2_ }
-C {sg13g2_dfrbp_2.sym} 10 110 2 1 {name=x2 VDD=VDD VSS=GND prefix=sg13g2_ }
-C {sg13g2_nand2_2.sym} 80 0 0 1 {name=x3 VDD=VDD VSS=GND prefix=sg13g2_ }
+C {/home/designer/shared/LC_VCO_FPLL/xschem/sg13g2_stdcells/sg13g2_dfrbp_2.sym} 10 -110 0 0 {name=x1 VDD=VDD VSS=GND prefix=sg13g2_ }
+C {/home/designer/shared/LC_VCO_FPLL/xschem/sg13g2_stdcells/sg13g2_dfrbp_2.sym} 10 110 2 1 {name=x2 VDD=VDD VSS=GND prefix=sg13g2_ }
+C {/home/designer/shared/LC_VCO_FPLL/xschem/sg13g2_stdcells/sg13g2_nand2_2.sym} 80 0 0 1 {name=x3 VDD=VDD VSS=GND prefix=sg13g2_ }
