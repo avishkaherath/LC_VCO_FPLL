@@ -185,7 +185,7 @@ N 1070 -130 1100 -130 {lab=SUB!}
 N 1070 -90 1100 -90 {lab=SUB!}
 N 1070 -130 1070 -90 {lab=SUB!}
 N 1070 -90 1070 -40 {lab=SUB!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
+C {4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
 C {code.sym} -210 280 0 0 {name=INDUCTOR only_toplevel=false 
 value="
 .subckt 4nH_INDUCTOR 1 2
