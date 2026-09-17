@@ -454,3 +454,5 @@ C {vdd.sym} 940 -60 0 1 {name=l24 lab=VDD}
 C {lab_pin.sym} 210 0 2 1 {name=p39 sig_type=std_logic lab=SUB!}
 C {lab_pin.sym} 1100 -130 0 1 {name=p80 sig_type=std_logic lab=SUB!}
 C {iopin.sym} 1100 -90 0 0 {name=p12 lab=SUB!}
+C {iopin.sym} 760 340 0 0 {name=p15 lab=OUTp}
+C {iopin.sym} 760 360 0 0 {name=p38 lab=OUTn}
