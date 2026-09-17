@@ -69,7 +69,8 @@ N 550 100 550 120 {lab=VSS}
 N 440 120 550 120 {lab=VSS}
 N 440 60 440 120 {lab=VSS}
 N 0 300 0 320 {lab=VDD}
-N 0 380 0 400 {lab=#net1}
+N 0 380 0 400 {lab=VSS}
+N -360 160 -360 180 {lab=GND}
 C {xschem/PHASE_FREQ_DET.sym} -290 0 0 0 {name=x1}
 C {xschem/CHARGE_PUMP.sym} 0 0 0 0 {name=x2}
 C {xschem/LOOP_FILTER.sym} 280 30 0 0 {name=x3}
@@ -2427,3 +2428,7 @@ model=cap_cmim
  spiceprefix=X}
 C {vdd.sym} 0 300 0 0 {name=l12 lab=VDD}
 C {gnd.sym} 0 400 0 0 {name=l13 lab=VSS}
+C {gnd.sym} -360 180 0 1 {name=l14 lab=GND}
+C {iopin.sym} -360 160 2 1 {name=p15 lab=GND}
+C {iopin.sym} 650 -40 1 1 {name=p16 lab=OUTp}
+C {iopin.sym} 670 -40 1 1 {name=p17 lab=OUTn}

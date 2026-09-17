@@ -185,7 +185,7 @@ N 1070 -130 1100 -130 {lab=SUB!}
 N 1070 -90 1100 -90 {lab=SUB!}
 N 1070 -130 1070 -90 {lab=SUB!}
 N 1070 -90 1070 -40 {lab=SUB!}
-C {/home/designer/shared/LC_VCO_FPLL/xschem/4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
+C {4nH_INDUCTOR.sym} 200 80 0 0 {name=x1}
 C {code.sym} -210 280 0 0 {name=INDUCTOR only_toplevel=false 
 value="
 .subckt 4nH_INDUCTOR 1 2
@@ -454,3 +454,5 @@ C {vdd.sym} 940 -60 0 1 {name=l24 lab=VDD}
 C {lab_pin.sym} 210 0 2 1 {name=p39 sig_type=std_logic lab=SUB!}
 C {lab_pin.sym} 1100 -130 0 1 {name=p80 sig_type=std_logic lab=SUB!}
 C {iopin.sym} 1100 -90 0 0 {name=p12 lab=SUB!}
+C {iopin.sym} 760 340 0 0 {name=p15 lab=OUTp}
+C {iopin.sym} 760 360 0 0 {name=p38 lab=OUTn}
